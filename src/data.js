@@ -12,7 +12,7 @@ export const projects = [
   },
   {
     id: 3,
-    img: "https://ibb.co/RBV3y0n",
+    img: "https://i.ibb.co/2sfvNt2/screencapture-stackup-netlify-app-2022-05-06-14-17-02.png",
     link: "https://stackup.netlify.app",
   },
   {

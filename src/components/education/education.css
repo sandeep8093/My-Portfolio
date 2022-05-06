@@ -1,0 +1,37 @@
+.a {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    
+  }
+  .a-title {
+    font-weight: 500;
+    padding: 80px;
+    font-size: 60px;
+  }
+  .exp-flex{
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  p{
+      margin-left: 180px;
+  }
+  .c-bg {
+    width: 20px;
+    height: 100%;
+    background-color: #c05551;
+    position: absolute;
+  }
+
+  @media screen and (max-width: 480px){
+    .a-title{
+        font-size: 50px;
+    }
+    .c-bg {
+        display: none;
+    }
+    p{
+        margin-left: 2px;
+    }
+  }

@@ -39,3 +39,96 @@
     display: none;
   }
 }
+.technical-skills {
+  text-align: center;
+  margin-top: 100px; /* Adjust the margin as needed */
+  padding: auto;
+  margin-bottom: 100px;
+}
+
+.skills-title {
+  color: #333; /* Adjust color as needed */
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+/* Add or update this style in your projectList.css */
+.skills-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 2fr));
+  gap: 60px;
+}
+
+.skills-category {
+  background-color: #f9f9f9; /* Adjust background color as needed */
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.skills-category:hover {
+  transform: scale(1.05);
+}
+
+.skills-category strong {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: hsl(360, 67%, 44%); /* Updated color */
+}
+
+.skills-items {
+  color: #555;
+  display: flex;
+  flex-wrap: wrap;
+}
+.skill-item {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  background-color: #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+
+
+.skill-item svg {
+  margin-right: 5px;
+}
+
+/* Additional styles for icons */
+.skills-items svg {
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* Add icons for each skill category */
+.languages::before {
+  content: "\1F5E1";
+  font-size: 24px;
+}
+
+.databaseSystems::before {
+  content: "\1F4BB";
+  font-size: 24px;
+}
+
+.frameworks::before {
+  content: "\1F3AF";
+  font-size: 24px;
+}
+
+.toolsAndTechnologies::before {
+  content: "\1F527";
+  font-size: 24px;
+}
+.skill-item::before {
+  content: "•"; /* Use any symbol or text as a separator */
+  margin-right: 5px;
+  color: #888; /* Adjust color as needed */
+}

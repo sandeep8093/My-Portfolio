@@ -134,20 +134,7 @@ Variables
   }
   
  
-  
-  .underline {
-    width: 5rem;
-    height: 0.25rem;
-    margin-bottom: 1.25rem;
-    background: var(--clr-primary-5);
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .title {
-    margin-bottom: 4rem;
-    text-align: center;
-  }
-  
+
   /*
   =============== 
   Jobs
@@ -189,4 +176,59 @@ Variables
   }
  
   
- 
+  .title {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .title h2 {
+    color: var(--clr-primary-5);
+    font-size: 2.5rem;
+  }
+  
+  .underline {
+    width: 5rem;
+    height: 0.25rem;
+    margin-bottom: 2rem;
+    background: var(--clr-primary-5);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .job-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .job-desc {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 1.5rem;
+    border-left: 2px solid var(--clr-primary-5);
+  }
+  
+  .job-icon {
+    color: var(--clr-primary-5);
+    margin-right: 10px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--clr-grey-1);
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--clr-primary-5);
+  }
+  
+  .job-date {
+    letter-spacing: var(--spacing);
+    margin-bottom: 0.5rem;
+    color: var(--clr-grey-5);
+  }

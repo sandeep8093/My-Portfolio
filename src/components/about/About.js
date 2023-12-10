@@ -17,7 +17,9 @@ const About = () => {
       <div className="a-right">
         <h1 className="a-title">About Me</h1>
         <p className="a-sub">
-          I am currently in my 3rd year pursuing Btech in the field of Electronics and Telecommunications at IIIT-Bhubaneswar
+        Dedicated and Efficient coder specializing in software development, with a passion for managing and extracting valuable
+insights from large datasets. Committed to continuous self-development and eager to apply learned skills in a corporate
+environment to deliver exceptional service.
         </p>
         
         

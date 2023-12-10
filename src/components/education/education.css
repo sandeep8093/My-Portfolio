@@ -23,6 +23,7 @@
     background-color: #c05551;
     position: absolute;
   }
+  
 
   @media screen and (max-width: 480px){
     .a-title{

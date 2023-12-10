@@ -3,13 +3,15 @@ import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
 import Git from "../../img/git.png";
+import LinkedIn from "../../img/linkedIn.png";
+import Resume from "../../img/resume.png";
 import { useContext, useRef, useState } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
 
 const Contact = () => {
   const formRef = useRef();
-  const [done, setDone] = useState(false)
+  const [done, setDone] = useState(false);
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
 
@@ -25,13 +27,13 @@ const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
-          setDone(true)
+          setDone(true);
         },
         (error) => {
           console.log(error.text);
         }
       );
-      e.target.reset();
+    e.target.reset();
   };
 
   return (
@@ -39,7 +41,7 @@ const Contact = () => {
       <div className="c-bg"></div>
       <div className="c-wrapper">
         <div className="c-left">
-          <h1 className="c-title">Let's discuss your project</h1>
+          <h1 className="c-title">Let's discuss</h1>
           <div className="c-info">
             <div className="c-info-item">
               <img src={Phone} alt="" className="c-icon" />
@@ -51,23 +53,57 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Address} alt="" />
-              K9a Kalinga Nagar Bhubaneswar,India
+              K9a Kalinga Nagar, Bhubaneswar, India
             </div>
             <div className="c-info-item">
               <img className="c-icon" src={Git} alt="" />
-              <a href="https://github.com/sandeep8093" >https://github.com/sandeep8093</a>
+              <a href="https://github.com/sandeep8093">
+                https://github.com/sandeep8093
+              </a>
+            </div>
+            <div className="c-info-item">
+              <img className="c-icon" src={LinkedIn} alt="" />
+              <a href="https://www.linkedin.com/in/sandeep-kumar-nayak-7440541a7/">
+                linkedIn/sandeep-kumar-nayak
+              </a>
+            </div>
+            <div className="c-info-item">
+              <img className="c-icon" src={Resume} alt="" />
+              <a href="https://drive.google.com/file/d/1Ei_hHUxu2gc9f-6yxcg2SHWPewq7Yx_Q/view?usp=sharing">
+                Check out my Resume
+              </a>
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. 
+            <b>What’s your story?</b> Get in touch.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Name" name="user_name" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Subject" name="user_subject" />
-            <input style={{backgroundColor: darkMode && "#333"}} type="text" placeholder="Email" name="user_email" />
-            <textarea style={{backgroundColor: darkMode && "#333"}} rows="5" placeholder="Message" name="message" />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Name"
+              name="user_name"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Subject"
+              name="user_subject"
+            />
+            <input
+              style={{ backgroundColor: darkMode && "#333" }}
+              type="text"
+              placeholder="Email"
+              name="user_email"
+            />
+            <textarea
+              style={{ backgroundColor: darkMode && "#333" }}
+              rows="5"
+              placeholder="Message"
+              name="message"
+            />
             <button>Submit</button>
             {done && "Thank you, Your Response has been submitted..."}
           </form>

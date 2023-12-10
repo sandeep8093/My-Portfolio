@@ -14,12 +14,11 @@ const Intro = () => {
               <div className="i-title-item">Graphic Designer</div>
               <div className="i-title-item">Photographer</div>
               <div className="i-title-item">Backend Developer</div>
-              <div className="i-title-item">Content Creator</div>
+              <div className="i-title-item">Software Developer</div>
             </div>
           </div>
           <p className="i-desc">
-            I design and develop services for customers of all sizes,
-            specializing in creating stylish, modern websites,and web services. 
+          I craft modern web solutions, optimizing functionality and integrating innovative features for diverse clients, ensuring project success and client satisfaction.
           </p>
         </div>
         <svg
